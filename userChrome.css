@@ -160,12 +160,6 @@ margin-block-start: -2px !important;
   visibility: visible !important;
 }
 
-/*
-#PersonalToolbar {
-  margin-top: 0px;
-}
-*/
-
 #nav-bar .toolbarbutton-1[open='true'] {
   visibility: visible;
   opacity: 100;
