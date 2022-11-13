@@ -1,5 +1,3 @@
-
-
 :root {
   /* Appmenu: Reduce item padding */
   --arrowpanel-menuitem-padding-block: 4px 8px !important;
@@ -46,7 +44,6 @@
 	min-height: 24px !important;
 	margin-block-start: 2px !important;
 }
-  
 
 
 /* Tab: Ensure tab height doesn't augment when arrowscrollbox is visible  */ 
@@ -65,16 +62,24 @@
 	fill: rgb(40,200,64) !important;
 }
 
-#tabs-newtab-button .toolbarbutton-icon {
+
+#tabs-newtab-button .toolbarbutton-icon/*, #new-tab-button */ {
 	border-radius: 4px !important;
 	margin-top: 5.5px !important;
 	margin-bottom: 0px !important;
 	min-height: 20px !important;
 	min-width: 20px !important;
-	padding-block: 4px 5px !important;
-	
+	padding-block: 4px 5px !important;	
+}
 
 
+/* hide spacer at end */
+.titlebar-spacer {
+  display: none;
+}
+
+.titlebar-buttonbox-container {
+  margin-right: 12px !important;
 }
 
 
@@ -139,7 +144,8 @@ margin-block-start: -2px !important;
   transition-delay: 1s;
   filter: alpha(opacity=0);
   opacity: 0;
-  transition: visibility, ease 0.35s, margin-top, ease 0.35s, opacity, ease 0.10s, rotate, ease 0.25s !important;
+  /* transition: visibility, ease 0.30s, margin-top, ease 0.30s, opacity, ease 0.05s, rotate, ease 0.20s !important; */
+  transition: visibility, ease 0.00s, margin-top, ease 0.00s, opacity, ease 0.00s, rotate, ease 0.1s !important;
 }
 
 #nav-bar:hover,
@@ -160,7 +166,40 @@ margin-block-start: -2px !important;
   visibility: visible !important;
 }
 
+/*
+#PersonalToolbar {
+  margin-top: 0px;
+}
+*/
+
 #nav-bar .toolbarbutton-1[open='true'] {
   visibility: visible;
   opacity: 100;
+}
+
+
+#alltabs-button {
+  display: none;
+  visibility: hidden;
+}
+
+/* fix colour of url bar */
+@media(prefers-color-scheme: dark) {
+  #urlbar-input-container, #remote-control-box, #urlbar-background {
+    background-color: #181825 !important;
+  }
+  
+  #titlebar, #nav-bar, #PersonalToolbar {
+    background-color: black !important;
+  }
+}
+
+@media(prefers-color-scheme: light) {
+  #urlbar-input-container, #remote-control-box, #urlbar-background {
+    background-color: #e6e9ef !important;
+  }
+  
+  #titlebar, #nav-bar, #PersonalToolbar {
+    background-color: white !important;
+  }
 }
