@@ -9,7 +9,8 @@
 - autohide close button
 - coloured new tab + close button on hover
 - monospaced font (Dank Mono – copyrighted font you can swap out for your own!) in URL bar
+- removed spacers and reduced padding for more compact look
 
 <h4>DEMO</h4>
 
-https://user-images.githubusercontent.com/65262710/202826267-103216fa-4329-48ff-bb29-e01fe649492d.mov
+https://user-images.githubusercontent.com/65262710/202826842-f0cf1976-6e77-4577-ae49-d325b03de121.mov
