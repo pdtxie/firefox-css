@@ -128,8 +128,6 @@
   visibility: visible;
   margin-top: -34px;
   transition-delay: 1s;
-  filter: alpha(opacity=0);
-  opacity: 100;
   transition: visibility, ease 0.00s, margin-top, ease 0.00s, opacity, ease 0.00s, rotate, ease 0.1s !important;
 }
 
@@ -141,8 +139,6 @@
 #toolbar-menubar:not([inactive='true']) ~ #nav-bar:not([customizing]) {
   visibility: visible;
   margin-top: 0px;
-  filter: alpha(opacity=100);
-  opacity: 100;
   margin-bottom: 0 !important;
   /* margin-bottom: -0.2px; */
 }
